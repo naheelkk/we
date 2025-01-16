@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mouseover</title>
+  </head>
+  <body>
+    <center>
+      <h2>
+        MouseOver
+      </h2><br><br>
+      <img onmouseover="imagechange(this)" src="obama.jpeg" width="500px" height="400px" >
+      <p id="text"></p>
+    </center>
+  </body>
+  <script>
+    let img =['obama.jpeg','biden.jpeg','trump.jpeg'];
+    let txt =['first image','second image','third image'];
+
+      let i =0;
+      function imagechange(imageElement)
+      {
+        imageElement.src =img[i];
+
+        document.getElementById('text').innerHTML =txt[i];
+
+        i = (i+1)% img.length;
+      }
+  </script>
+</html>

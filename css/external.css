@@ -1,0 +1,19 @@
+/* external.css */
+
+body {
+    background-color: green; /* Light blue background */
+    font-family: Arial, sans-serif; /* Font style */
+}
+
+h2 {
+    background-color: lightblue;
+    color: #2e8b57; /* Sea green color for h2 */
+    text-align: center; /* Center the h2 text */
+    letter-spacing: 5px;
+}
+
+p {
+    font-size: 25px; /* Font size for paragraphs */
+    line-height: 1.5; /* Line height for readability */
+}
+

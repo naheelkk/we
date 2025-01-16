@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body bgcolor="grey">
+    <font face="sans-serif" color="blue" size="5">
+        <h2 align="center">REGISTRATION FORM</h2>
+        <hr>
+        <hr>
+    </font>
+    <center>
+        <table border="2" cellpadding="20" cellspacing="40" bgcolor="white">
+            <tr>
+                <td>
+                    <form>
+                        <p>
+                            Name: 
+                            <input type="text" maxlength="30" required />
+                        </p>
+                        <p>
+                            Student No: 
+                            <input type="text" maxlength="10" required />
+                        </p>
+                        <p>
+                            Email: 
+                            <input type="email" required />
+                        </p>
+                        <p>
+                            Password: 
+                            <input type="password" name="password" required />
+                        </p>
+                        <p>
+                            Mobile Number: 
+                            <input type="tel" name="mobile" pattern="[0-9]{10}" required placeholder="10-digit number" />
+                        </p>
+                        <p>
+                            Date of Birth: 
+                            <input type="date" name="dob" required />
+                        </p>
+                        <p>
+                            Address: 
+                            <textarea rows="5" cols="20" required></textarea>
+                        </p>
+                        <p>
+                            City: 
+                            <select required>
+                                <option>Select</option>
+                                <option value="kattangal">Kattangal</option>
+                                <option value="kalanthode">Kalanthode</option>
+                                <option value="kunnamangalam">Kunnamangalam</option>
+                            </select>
+                        </p>
+                        <p>
+                            Is foreign?: 
+                            <input type="checkbox" />
+                        </p>
+                        <p>
+                            Gender: 
+                            Male: <input type="radio" name="gender" value="male" required />
+                            Female: <input type="radio" name="gender" value="female" required />
+                        </p>
+                        <p>
+                            Day Scholar?: 
+                            <input type="radio" name="day_scholar" value="yes" required /> Yes
+                            <input type="radio" name="day_scholar" value="no" required /> No
+                        </p>
+                        <p>
+                            <input type="submit" value="Submit" />
+                            <input type="reset" value="Reset" />
+                        </p>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>
+

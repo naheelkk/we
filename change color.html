@@ -1,0 +1,25 @@
+<html>
+<body>
+<style>
+</style>
+<center>
+ <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+<h1>Color Changing Button</h1> 
+    <button type="button" style="height:50px; border-radius:50px;" onclick="colorchange();">Change background Color</button>
+  </div>
+</center>
+
+<script>
+var color = ["red", "blue", "yellow", "green"];
+var l = color.length;
+var i = 0;
+
+function colorchange() {
+    document.getElementsByTagName("body")[0].style.backgroundColor = color[i];
+    i = (i + 1) % l;  
+}
+</script>
+
+</body>
+</html>
+
